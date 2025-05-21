@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouquets - Jasmine</title>
+  <link rel="stylesheet" href="css.css">
+  <link rel="icon" type="image/png" href="Download premium png of PNG Blossom flower petal plant_ by Aom W. about png, texture, flower, plant, and cute 13947619">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
+      color: #4a2c2a;
+      margin: 0;
+    }
+   header {
+  background-image: url(lilies.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  padding: 10px;
+}
+
+header h1 {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: #ff69b4;
+      padding: 10px 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+    .content {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .content h2 {
+      color: #d63384;
+      margin-bottom: 20px;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .product {
+      border: 1px solid #ddd;
+      padding: 15px;
+      text-align: center;
+      background-color: white;
+      border-radius: 10px;
+      width: 200px;
+    }
+    .product img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .product h3 {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jasmine & lily's</h1>
+ </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="boutique.html">Boutique</a>
+    <a href="occasion.html">Occasion</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="content">
+    <h2>Nos Bouquets pour mariage</h2>
+
+
+
+      
+      <div class="products">
+
+
+
+      <!-- bouquet mariage -->
+
+
+      <div class="product">
+        <img src="marriage 1.jpg" alt="bouquet blanc marie ">
+        <h3>Bouquet blanc pour la marie</h3>
+        <p>5500DZ</p>
+        <button onclick="addToCart('bouquet blanc marie', 5500)">Ajouter</button>
+      </div>
+      <div class="product">
+        <img src="mariage 2.jpg" alt="bouquet floral marie">
+        <h3>Bouquet floral marie </h3>
+        <p>5600DZ</p>
+        <button onclick="addToCart('Bouquet floral marie', 5600)">Ajouter</button>
+      </div>
+      <div class="product">
+        <img src="mariage 3.jpg" alt="bouquet mariage rosee ">
+        <h3>Bouquet mariage rosee </h3>
+        <p>3700DZ</p>
+        <button onclick="addToCart('Bouquet mariage rosee ', 3700)">Ajouter</button>
+      </div>
+
+
+
+      <div class="product">
+        <img src="mariage 4.jpg" alt="bouquet mariage mixte tulip rose orchidee ">
+        <h3>bouquet mariage mixte tulip rose orchidee  </h3>
+        <p>4700DZ</p>
+        <button onclick="addToCart('bouquet mariage mixte tulip rose orchidee  ', 4700)">Ajouter</button>
+      </div><div class="product">
+        <img src="mariage 5.jpg" alt="bouquet mariage Orchidee ">
+        <h3>Bouquet mariage Orchidee </h3>
+        <p>3900DZ</p>
+        <button onclick="addToCart('bouquet mariage Orchidee ', 3900)">Ajouter</button>
+      </div>
+
+
+
+</div>
+
+
+
+      <div class="cart" id="cart">
+    <h3>Panier</h3>
+    <ul id="cartItems"></ul>
+    <div class="total" id="cartTotal">Total : 0dz</div>
+    <button onclick="checkout()">Valider la commande</button>
+  </div>  <!-- Formulaire de livraison (masqué par défaut) -->
+<div id="formulaireLivraison" style="display: none; padding: 20px; background-color: #fff0f5; border-top: 2px solid #d63384;">
+  <h2 style="text-align:center; color: #d63384;">Informations de livraison</h2>
+  <form onsubmit="envoyerCommande(event)" style="max-width: 400px; margin: auto;">
+    <input type="text" placeholder="Nom complet" required style="width:100%; margin:10px 0; padding:10px;"><br>
+    <input type="text" placeholder="Adresse de livraison" required style="width:100%; margin:10px 0; padding:10px;"><br>
+    <input type="text" placeholder="Ville" required style="width:100%; margin:10px 0; padding:10px;"><br>
+    <input type="text" placeholder="Code postal" required style="width:100%; margin:10px 0; padding:10px;"><br>
+    <input type="tel" placeholder="Numéro de téléphone" required style="width:100%; margin:10px 0; padding:10px;"><br>
+    <button type="submit" style="padding: 10px 20px; background-color: #d63384; color: white; border: none; border-radius: 5px;">Envoyer la commande</button>
+  </form>
+</div>
+    </div>
+  </section>
+  <script src="script.js">
+  
+
+  </script>
+</body>
+</html>

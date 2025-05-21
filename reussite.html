@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouquets - Jasmine</title>
+  <link rel="stylesheet" href="css.css">
+  <link rel="icon" type="image/png" href="Download premium png of PNG Blossom flower petal plant_ by Aom W. about png, texture, flower, plant, and cute 13947619">
+  
+   
+</head>
+<body>
+  <header>
+    <h1>Jasmine & Lily's</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="boutique.html">Boutique</a>
+    <a href="occasion.html">Occasion</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="content">
+    <h2>Nos Bouquets pour reussite</h2>
+
+
+
+
+    <div class="products">
+
+
+
+
+
+
+
+
+<!-- reussite -->
+
+      
+      <div class="product">
+        <img src="succes 1 gradu.jpg" alt="bouquet  congratulation for graduation  ">
+        <h3>bouquet rose rouges   congratulation for graduation</h3>
+        <p>2500DZ</p>
+        <button onclick="addToCart('bouquet rose rouges   congratulation for graduation', 2500)">Ajouter</button>
+      </div>
+      <div class="product">
+        <img src="succes 2 gradu.jpg" alt="bouquet rose rouges et blanc  congratulation for graduation ">
+        <h3>bouquet rose rouges et blanc  congratulation for graduation</h3>
+        <p>1600DZ</p>
+        <button onclick="addToCart('bouquet rose rouges et blanc  congratulation for graduation', 1600)">Ajouter</button>
+      </div>
+
+      <div class="product">
+        <img src="succes 3.jpg" alt="bouquet pour feliciter  ">
+        <h3>bouquet pour feliciter  </h3>
+        <p>1700 DZ</p>
+        <button onclick="addToCart('bouquet pour feliciter  ', 1700)">Ajouter</button>
+      </div>
+
+
+      <div class="product">
+        <img src="succes 4.jpg.crdownload" alt="bouquet rose rose pink et blanc congratulation">
+        <h3>bouquet rose rose pink et blanc congratulation</h3>
+        <p>1700DZ</p>
+        <button onclick="addToCart('bouquet rose rose pink et blanc congratulation ', 1700)">Ajouter</button>
+      </div>
+      <div class="product">
+        <img src="succes 5.jpg" alt="bouquet pour feliciter ">
+        <h3>Bouquet pour feliciter </h3>
+        <p>1900DZ</p>
+        <button onclick="addToCart('Bouquet pour feliciter  ', 1900)">Ajouter</button>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+      <div class="cart" id="cart">
+    <h3>Panier</h3>
+    <ul id="cartItems"></ul>
+    <div class="total" id="cartTotal">Total : 0dz</div>
+    <button onclick="checkout()">Valider la commande</button>
+  </div>
+    <!-- Formulaire de livraison (masqué par défaut) -->
+<div id="formulaireLivraison" style="display: none; padding: 20px; background-color: #fff0f5; border-top: 2px solid #d63384;">
+  <h2 style="text-align:center; color: #d63384;">Informations de livraison</h2>
+  <form onsubmit="envoyerCommande(event)" style="max-width: 400px; margin: auto;">
+    <input type="text" placeholder="Nom complet" required style="width:100%; margin:10px 0; padding:10px;"><br>
+    <input type="text" placeholder="Adresse de livraison" required style="width:100%; margin:10px 0; padding:10px;"><br>
+    <input type="text" placeholder="Ville" required style="width:100%; margin:10px 0; padding:10px;"><br>
+    <input type="text" placeholder="Code postal" required style="width:100%; margin:10px 0; padding:10px;"><br>
+    <input type="tel" placeholder="Numéro de téléphone" required style="width:100%; margin:10px 0; padding:10px;"><br>
+    <button type="submit" style="padding: 10px 20px; background-color: #d63384; color: white; border: none; border-radius: 5px;">Envoyer la commande</button>
+  </form>
+</div>
+    </div>
+  </section>
+  <script src="script.js">
+   
+  </script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Occasions - Jasmine</title>
+  <link rel="icon" type="image/png" href="Download premium png of PNG Blossom flower petal plant_ by Aom W. about png, texture, flower, plant, and cute 13947619">
+
+  <style>
+    
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fffaf0;
+      color: #4a2c2a;
+      margin: 0;
+    }
+    
+header {
+  background-image: url(lilies.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  padding: 10px;
+}
+
+header h1 {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+     footer {
+      background-color: #ff69b4;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: #ffb6c1;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    h2 {
+      text-align: center;
+      color: #d63384;
+      margin-top: 20px;
+    }
+    .occasions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+    .occasion {
+      background-color: white;
+      border-radius: 10px;
+      padding: 15px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .occasion img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .occasion h3 {
+      color: #d63384;
+      margin: 10px 0;
+    }
+    
+
+ form input, form textarea {
+      padding: 10px;
+      width: 300px;
+      margin: 10px auto;
+      display: block;
+      border-radius: 8px;
+      border: 2px solid #ff69b4;
+      background-color: #fff0f5;}
+      /* Styles spécifiques pour le formulaire de contact */
+#contact form {
+  display: inline-block;
+  background-color: #fff0f5;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #d63384;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact input,
+#contact textarea {
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid #d63384;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #4a2c2a;
+  font-size: 16px;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+  border-color: #ff69b4;
+  box-shadow: 0 0 5px rgba(255, 105, 180, 0.5);
+}
+
+#contact button {
+  transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+  background-color: #c2185b;
+}
+  
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jasmine & Lily's</h1>
+ </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="boutique.html">Boutique</a>
+    <a href="occasion.html">Occasions</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+<!-- CONTACT -->
+  <div id="contact" class="page">
+    <h2>Contactez-nous</h2>
+    <form onsubmit="event.preventDefault(); envoyerMessage();">
+      <input type="text" placeholder="Votre nom" required><br>
+      <input type="email" placeholder="Votre email" required><br>
+      <textarea placeholder="Votre message" required></textarea><br>
+      <button  type="submit">Envoyer</button>
+    </form>
+  </div>
+  <script>
+   function envoyerMessage() {
+      alert("Merci pour votre message ! Nous vous répondrons rapidement.");
+      showPage('boutique');
+    }
+  </script>
+ <footer>
+     <h3>Contact:</h3>
+    <p>email: jasmine.adjoudj@fgei.ummto.dz </p>
+    <p>email: lisa.bedri@fgei.ummto.dz</p>
+    <p><strong>localisation de notre boutique:</strong><a href="https://maps.app.goo.gl/U5o9BmJvgo1uVKAZ8">https://maps.app.goo.gl/U5o9BmJvgo1uVKAZ8</a></p>
+  </footer>
+</body>
+</html>
+
+

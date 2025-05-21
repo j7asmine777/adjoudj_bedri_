@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jasmine - Fleurs en ligne</title>
+  <link rel="icon" type="image/png" href="Download premium png of PNG Blossom flower petal plant_ by Aom W. about png, texture, flower, plant, and cute 13947619">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
+      color: #4a2c2a;
+    }
+
+
+header {
+  background-image: url(lilies.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-size: 24px;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+header .shop-btn {
+  background-color: #ff69b4;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+header .shop-btn:hover {
+  background-color: #d63384;
+}
+
+
+   
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: #ff69b4;
+      padding: 10px 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+    .categories {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      background-color: #fffaf0;
+    }
+    .cat {
+      text-align: center;
+      margin: 10px;
+    }
+    .cat img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ffb6c1;
+    }
+    .cat p {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #d63384;
+    }
+    .about, .testimonials {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #fff0f5;
+    }
+    .about h2, .testimonials h2 {
+      color: #d63384;
+      margin-bottom: 15px;
+    }
+    .about p, .testimonials p {
+      max-width: 600px;
+      margin: auto;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .features {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 20px;
+      background-color: #fffaf0;
+      flex-wrap: wrap;
+    }
+    .feature {
+      flex: 1 1 250px;
+      max-width: 300px;
+      text-align: center;
+      margin: 20px;
+    }
+    .feature img {
+      max-width: 100px;
+      margin-bottom: 15px;
+    }
+    .feature h3 {
+      color: #d63384;
+      margin-bottom: 10px;
+    }
+    footer {
+      background-color: #ff69b4;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jasmine & Lily</h1>
+    <p>Votre boutique de fleurs en ligne</p>
+    <a href="#nav" class="shop-btn">Shop Now</a>
+  </header>
+
+  <nav id="nav">
+    <a href="#">Accueil</a>
+    <a href="boutique.html">Boutique</a>
+    <a href="occasion.html">Occasion</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="categories">
+    <div class="cat">
+      <a href="fleurie.html"><img src="rose.jpg" alt="plante fleurie">
+      </a><p>Plantes Fleurie </p>
+    </div>
+    <div class="cat">
+      <a href="PLANTEVERTE.html"><img src="plante.jpg" alt="plantes verte"></a>
+      <p>Plantes verte</p>
+    </div>
+    <div class="cat">
+    <a href="ORCHIDEE.html">  <img src="orchide.jpg" alt="Orchidées"></a>
+      <p>Orchidées</p>
+    </div>
+    <div class="cat">
+      <a href="bouquets.html"><img src="bouquet.jpg" alt="Bouquets"></a>
+      <p>Bouquets </p>
+    </div>
+    
+  </section>
+
+  <section class="about">
+    <h2>À propos de Jasmine & Lily's</h2>
+    <p>Jasmine & Lily's est une boutique de fleurs en ligne qui célèbre la beauté naturelle à travers des créations florales douces, élégantes et personnalisées pour chaque occasion.</p>
+  </section>
+
+  <section class="testimonials">
+    <h2>Ce que disent nos clients</h2>
+    <p>"Livraison rapide et bouquet magnifique !"</p>
+    <p>"Un service client adorable et des fleurs qui durent longtemps."</p>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <img src="j333.png" alt="Artisanat local">
+      <h3>Artisanat local</h3>
+      <p>Votre artisan fleuriste local réalise votre composition</p>
+    </div>
+    <div class="feature">
+      <img src="j222.png" alt="Livraison rapide">
+      <h3>Livraison en 4h</h3>
+      <p>Votre commande livrée le jour-même, 7j/7 et jours fériés inclus</p>
+    </div>
+    <div class="feature">
+      <img src="j111.png" alt="Partout en France">
+      <h3>Partout en Algérie</h3>
+      <p>Un réseau de 2500 fleuristes en Algérie et dans le monde entier</p>
+    </div>
+  </section>
+
+  <footer>
+     <h3>Contact:</h3>
+    <p>email: jasmine.adjoudj@fgei.ummto.dz </p>
+    <p>email: lisa.bedri@fgei.ummto.dz</p>
+    <p><strong>localisation de notre boutique:</strong><a href="https://maps.app.goo.gl/U5o9BmJvgo1uVKAZ8">https://maps.app.goo.gl/U5o9BmJvgo1uVKAZ8</a></p>
+  </footer>
+</body>
+</html>

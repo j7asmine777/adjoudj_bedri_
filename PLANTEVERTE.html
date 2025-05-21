@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>plantes vertes  - Jasmine</title>
+  <link rel="icon" type="image/png" href="Download premium png of PNG Blossom flower petal plant_ by Aom W. about png, texture, flower, plant, and cute 13947619">
+
+  <link rel="stylesheet" href="css.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <header>
+    <h1>Jasmine & Lily's</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="boutique.html">Boutique</a>
+    <a href="occasion.html">Occasions</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="content">
+    <h2>Nos Plantes vertes</h2>
+
+
+    <div class="products">
+         <div class="product">
+        <img src="plante-dieffenbachia-livraison-de-fleurs-430x430-51402.jpg" alt="Dieffenbachia">
+        <h3>Dieffenbachia</h3>
+        <p>2500DZ</p>
+        <button onclick="addToCart('Dieffenbachia', 2500)">Ajouter</button>
+      </div>
+      
+      
+      <div class="product">
+        <img src="plante-d-interieur-spatiphyllu-livraison-de-plantes-430x430-25431.jpg" alt="Spatiphyllum en fleurs">
+        <h3>Spatiphyllum en fleurs</h3>
+        <p>1500DZ</p>
+        <button onclick="addToCart('Spatiphyllum', 1500)">Ajouter</button>
+      </div>
+      
+      <div class="product">
+        <img src="plante-aloe-vera-livraison-de-plantes-430x430-33102.jpg" alt="aloe vera">
+        <h3>Aloe Vera</h3>
+        <p>4500DZ</p>
+        <button onclick="addToCart('Aloe vera', 4500)">Ajouter</button>
+      </div>
+
+
+      <div class="product">
+        <img src="ficus.jpg" alt="ficus">
+        <h3>ficus</h3>
+        <p>1500DZ</p>
+        <button onclick="addToCart('ficus', 1500)">Ajouter</button>
+      </div>
+      <div class="product">
+        <img src="guzmania.jpg" alt="guzmania">
+        <h3>guzmania</h3>
+        <p>1600DZ</p>
+        <button onclick="addToCart('guzmania', 1600)">Ajouter</button>
+      </div>
+      <div class="product">
+        <img src="sansevieria.jpg" alt="sansevieria">
+        <h3>Sansevieria</h3>
+        <p>1700DZ</p>
+        <button onclick="addToCart('sansevieria', 1700)">Ajouter</button>
+      </div>
+      <div class="cart" id="cart">
+    <h3>Panier</h3>
+    <ul id="cartItems"></ul>
+    <div class="total" id="cartTotal">Total : 0dz</div>
+    <button onclick="checkout()">Valider la commande</button>
+  </div>  <!-- Formulaire de livraison (masqué par défaut) -->
+<div id="formulaireLivraison" style="display: none; padding: 20px; background-color: #fff0f5; border-top: 2px solid #d63384;">
+  <h2 style="text-align:center; color: #d63384;">Informations de livraison</h2>
+  <form onsubmit="envoyerCommande(event)" style="max-width: 400px; margin: auto;">
+    <input type="text" placeholder="Nom complet" required style="width:100%; margin:10px 0; padding:10px;"><br>
+    <input type="text" placeholder="Adresse de livraison" required style="width:100%; margin:10px 0; padding:10px;"><br>
+    <input type="text" placeholder="Ville" required style="width:100%; margin:10px 0; padding:10px;"><br>
+    <input type="text" placeholder="Code postal" required style="width:100%; margin:10px 0; padding:10px;"><br>
+    <input type="tel" placeholder="Numéro de téléphone" required style="width:100%; margin:10px 0; padding:10px;"><br>
+    <button type="submit" style="padding: 10px 20px; background-color: #d63384; color: white; border: none; border-radius: 5px;">Envoyer la commande</button>
+  </form>
+</div>
+    </div>
+  </section>
+  <script src="script.js">
+    
+  </script>
+</body>
+</html>
